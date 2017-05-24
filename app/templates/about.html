@@ -48,15 +48,18 @@ About
 	</div>
 </div>
 
-<div class="banner-wrap" style="background: grey">
+<div class="container container-app container-block">
+	<h3>T H E &nbsp; U N I V E R S I T Y &nbsp; O F &nbsp; T H E &nbsp; W E S T &nbsp; I N D I E S</h3>
+</div>
+
+<div id="map" class="banner-wrap">
 	map goes here
 </div>
-	
-<div class="container container-block">
 
-	<div>
-		contact info here
-	</div>
-</div>
+{% endblock %}
 
+{% block js %}
+<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBToMqL2BxHGxcqgSA2V9yagb402ygPkH4&callback=initMap">
+</script>
 {% endblock %}

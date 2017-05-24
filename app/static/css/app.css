@@ -1,5 +1,145 @@
+/* Elements */
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
 body {
 	margin-top: 60px;
+	margin-bottom: 200px;
+}
+
+/* Classes */
+
+.about-container {
+	margin: 16px auto;
+}
+
+.about-container label {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	color: #888888;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.banner-container {
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+.banner-header {
+ 	text-align: center;
+ 	color: white;
+ 	font-size: 48px;
+ 	text-shadow: 2px 2px black;
+ 	margin: 20px auto;
+ }
+
+.banner-wrap {
+	height: 660px;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.block-header {
+	color: black;
+	font-size: 38px;
+	text-align: center;
+	padding: 8px;
+}
+
+.container-app {
+	padding: 15px;
+}
+
+.container-app p {
+	color: #888888;
+	margin: 8px auto;
+	display: block;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: justify;
+}
+
+.container-block h3 {
+	color: #000099;
+	font-weight: bold;
+	text-align: center;
+	font-size: 16px;
+	line-height: 31.5px;
+	padding: 8px;
+
+}
+
+.feature-container {
+	margin: 18px auto;
+	padding: 8px;
+	border: 1px solid #dddddd;
+	box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.4);
+}
+
+.feature-container label {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	color: #888888;
+	font-size: 20px;
+	padding: 4px
+	line-height: 24px;
+}
+
+.feature-container p {
+	width: 100%;
+	text-align: justify;
+	margin: 8px auto;
+	font-style: italic;
+	color: #444444;
+	font-size: 18px;
+	padding: 4px
+	line-height: 24px;
+}
+
+.feature-image {
+	height: 280px;
+	position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+	margin: auto;
+}
+
+.feature-image-crop {
+	height: 280px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.footer {
+   width: 100%;
+   height: 150px;  
+   position: absolute; 
+   bottom: 0px; 
+   left: 0px; 
+   background: black;
+   overflow: hidden;
+   color: white;
+   padding: 8px;
+}
+
+.footer hr {
+	margin: 4px auto;
+}
+
+.footer label {
+	display: block;
+	margin: 0;
 }
 
 .navbar-app {
@@ -29,18 +169,14 @@ body {
 	color: black;
 }
 
-.navbar-toggle-app {
-	float: left;
-}
-
-.navbar-collapse-app, .navbar-container-app {
-	background-color: #ffffff;
-}
-
 .navbar-app .navbar-collapse-app .navbar-nav li a {
 	background-color: #ffffff;
 	color: black;
 	padding: 15px;
+}
+
+.navbar-collapse-app, .navbar-container-app {
+	background-color: #ffffff;
 }
 
 .navbar-label {
@@ -51,75 +187,8 @@ body {
 	border-bottom: 2px solid #0066ff;
 }
 
-.banner-wrap {
-	height: 660px;
-	text-align: center;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-}
-
-#home-top-banner {	
-	background-image: url('/img/home_banner.jpg');
-}
-
-#about-top-banner {
-	background-image: url('/img/uwi-mona-main-gate.jpg');
-}
-
-.banner-container {
-	display: flex;
-	height: 100%;
-	align-items: center;
-}
-
-.banner-header {
- 	text-align: center;
- 	color: white;
- 	font-size: 48px;
- 	text-shadow: 2px 2px black;
- 	margin: 20px auto;
- }
-
-.block-header {
-	color: black;
-	font-size: 38px;
-	text-align: center;
-	padding: 8px;
-}
-
-.container-block h3 {
-	color: #000099;
-	font-weight: bold;
-	text-align: center;
-	font-size: 16px;
-	line-height: 31.5px;
-	padding: 8px;
-
-}
-
-.container-app {
-	padding: 15px;
-}
-
-.container-app p {
-	color: #888888;
-	margin: 8px auto;
-	display: block;
-	font-size: 18px;
-	line-height: 24px;
-	text-align: justify;
-}
-
-.about-container {
-	margin: 16px auto;
-}
-
-.profile-image-crop {
-	width: 280px;
-	height: 280px;
-	position: relative;
-	overflow: hidden;
-	margin: 8px auto;
+.navbar-toggle-app {
+	float: left;
 }
 
 .profile-image {
@@ -132,11 +201,25 @@ body {
 	margin: auto;
 }
 
-.about-container label {
-	width: 100%;
-	text-align: center;
-	margin: 0 auto;
-	color: #888888;
-	font-size: 16px;
-	line-height: 24px;
+.profile-image-crop {
+	width: 280px;
+	height: 280px;
+	position: relative;
+	overflow: hidden;
+	margin: 8px auto;
 }
+
+/* IDs */
+
+#about-top-banner {
+	background-image: url('/img/uwi-mona-main-gate.jpg');
+}
+
+#features {
+	padding-top: 60px;
+}
+
+#home-top-banner {	
+	background-image: url('/img/home_banner.jpg');
+}
+
